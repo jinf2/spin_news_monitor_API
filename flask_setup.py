@@ -1,6 +1,7 @@
 from flask import Flask,jsonify
 
 app = Flask(__name__)
+app.json.sort_keys = False
 
 #news_monitor_API_start
 @app.route('/')
@@ -19,3 +20,5 @@ def Find_Prof_News(UniversityName,DayRange,LLMsT):
 
 if __name__ == '__main__':
     app.run()
+
+#http://127.0.0.1:5000/FindProfNews/uiuc/3d/GPT4.0

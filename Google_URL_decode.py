@@ -71,4 +71,7 @@ def decode_google_news_url(source_url):
 if __name__ == "__main__":
     source_url = 'https://news.google.com/rss/articles/CBMiYWh0dHBzOi8vZWNlLmVuZ2luLnVtaWNoLmVkdS9zdG9yaWVzL21pY2hpZ2FuLXBsYXNtYS1wcml6ZS1ob25vcnMtdW5pdmVyc2l0eS1vZi1pbGxpbm9pcy1wcm9mZXNzb3LSAQA?oc=5'
     decoded_url = decode_google_news_url(source_url)
+    print("source_url:")
+    print(source_url)
+    print("decoded_url:")
     print(decoded_url)
