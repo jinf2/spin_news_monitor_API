@@ -10,13 +10,14 @@ def get_items():
 
 @app.route('/FindProfNews/<UniversityName>/<DayRange>/<LLMsT>')
 def Find_Prof_News(UniversityName,DayRange,LLMsT):
-    import news_monitors
+    import src.news_monitors as news_monitors
     result = news_monitors.New_Monitor(UniversityName,DayRange,LLMsT)
     return jsonify(result)
     # return{
     #     "msg":"success",
     #     "data":result
     # }
+
 
 if __name__ == '__main__':
     app.run()

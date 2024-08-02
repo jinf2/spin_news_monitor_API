@@ -5,7 +5,7 @@ import re
 from datetime import datetime
 from bs4 import BeautifulSoup
 from langchain_community.llms import Ollama
-import Google_URL_decode
+import src.Google_URL_decode as Google_URL_decode
 
 openai.api_key=''
 
